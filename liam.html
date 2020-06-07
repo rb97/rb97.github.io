@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Autism Soundboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
+  <script src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+  <script src="bootstrap-4.0.0/assets/js/vendor/holder.min.js"></script>
+  <script>
+    $(document).ready(function() {
+
+      $("#btnStfu").click(function() {
+        var audio = new Audio("stfu.m4a");
+        audio.play();
+      });
+
+      $("#btnYeet").click(function() {
+        var audio = new Audio("yeet.m4a");
+        audio.play();
+      });
+
+      $("#btnAnakin").click(function() {
+        var audio = new Audio("anakin.m4a");
+        audio.play();
+      });
+
+      $("#btnThankYou").click(function() {
+        var audio = new Audio("thankyou.m4a");
+        audio.play();
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Autism Soundboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link active" href="liam.html">Liam</a>
+        <a class="nav-item nav-link" href="kieran.html">Kieran</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 box-shadow">
+            <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="liamAnakin.jpg" data-holder-rendered="true">
+            <div class="card-body">
+              <p class="card-text">If you're so good...</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" id="btnAnakin" class="btn btn-sm btn-outline-secondary"">Play &#9658;</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" alt="Thumbnail [100%x225]" style="height: 225px; width: 100%; display: block;" src="liamStfu.jpg" data-holder-rendered="true">
+                <div class="card-body">
+                  <p class="card-text">You'd better shut your mouth.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" id="btnStfu" class="btn btn-sm btn-outline-secondary"">Play &#9658;</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+            <div class=" col-md-4">
+                    <div class="card mb-4 box-shadow">
+                      <img class="card-img-top" alt="Thumbnail [100%x225]" src="liamYeet.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                      <div class="card-body">
+                        <p class="card-text">Yeeeeet!</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" id="btnYeet" class="btn btn-sm btn-outline-secondary">Play &#9658;</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+
+              <div class="row">
+
+                    <div class=" col-md-4">
+                            <div class="card mb-4 box-shadow">
+                              <img class="card-img-top" alt="Thumbnail [100%x225]" src="liamThankYou.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                              <div class="card-body">
+                                <p class="card-text">Thank you!</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" id="btnThankYou" class="btn btn-sm btn-outline-secondary">Play &#9658;</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+            </div>
+          </div>
+</body>
+
+</html>
