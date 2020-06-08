@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Idiot Soundboard</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
+  <script src="bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+  <script src="bootstrap-4.0.0/assets/js/vendor/holder.min.js"></script>
+  <script>
+    $(document).ready(function() {
+
+      $("#btnThreeGuys").click(function() {
+        var audio = new Audio("audio/threeguys.m4a");
+        audio.play();
+      });
+
+    });
+  </script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">Idiot Soundboard</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link active" href="liam">Liam</a>
+        <a class="nav-item nav-link" href="kieran">Kieran</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="album py-5 bg-light">
+    <div class="container">
+
+              <div class="row">
+
+                    <div class=" col-md-4">
+                            <div class="card mb-4 box-shadow">
+                              <img class="card-img-top" alt="Thumbnail [100%x225]" src="images/liamThreeGuys.jpg" data-holder-rendered="true" style="height: 225px; width: 100%; display: block;">
+                              <div class="card-body">
+                                <p class="card-text">I've got three guys on me!</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                  <div class="btn-group">
+                                    <button type="button" id="btnThreeGuys" class="btn btn-sm btn-outline-secondary">Play &#9658;</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+            </div>
+          </div>
+
+  <nav aria-label="...">
+  <ul class="pagination d-flex justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href="liam2" tabindex="-1">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="liam">1</a></li>
+    <li class="page-item">
+      <a class="page-link" href="liam2">2</a>
+    </li>
+    <li class="page-item active">
+      <a class="page-link" href="liam3">3<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="page-item disabled">
+      <a class="page-link" href="#">Next</a>
+    </li>
+  </ul>
+</nav>
+
+</body>
+
+</html>
